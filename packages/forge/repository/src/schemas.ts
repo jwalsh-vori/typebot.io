@@ -5,6 +5,8 @@ import { calComBlock } from "@typebot.io/cal-com-block";
 import { calComBlockSchema } from "@typebot.io/cal-com-block/schemas";
 import { chatNodeBlock } from "@typebot.io/chat-node-block";
 import { chatNodeBlockSchema } from "@typebot.io/chat-node-block/schemas";
+import { cometChatBlock } from "@typebot.io/comet-chat-block";
+import { cometChatBlockSchema } from "@typebot.io/comet-chat-block/schemas";
 import { difyAiBlock } from "@typebot.io/dify-ai-block";
 import { difyAiBlockSchema } from "@typebot.io/dify-ai-block/schemas";
 import { elevenlabsBlock } from "@typebot.io/elevenlabs-block";
@@ -44,6 +46,7 @@ export const forgedBlockSchemas = {
   [segmentBlock.id]: segmentBlockSchema,
   [groqBlock.id]: groqBlockSchema,
   [zendeskBlock.id]: zendeskBlockSchema,
+  [cometChatBlock.id]: cometChatBlockSchema,
 } as const;
 
 export const forgedBlockSchema = z.discriminatedUnion("type", [
@@ -61,5 +64,6 @@ export const forgedBlockSchema = z.discriminatedUnion("type", [
   segmentBlockSchema,
   groqBlockSchema,
   zendeskBlockSchema,
+  cometChatBlockSchema,
 ]);
 export type ForgedBlock = z.infer<typeof forgedBlockSchema>;

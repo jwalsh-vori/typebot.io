@@ -1,0 +1,5 @@
+{
+  "name": "@typebot.io/comet-chat-block",
+  "dependencies": { "@typebot.io/forge": "workspace:*" },
+  "devDependencies": { "@typebot.io/tsconfig": "workspace:*" }
+}
