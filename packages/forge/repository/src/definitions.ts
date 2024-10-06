@@ -2,6 +2,7 @@
 import { anthropicBlock } from "@typebot.io/anthropic-block";
 import { calComBlock } from "@typebot.io/cal-com-block";
 import { chatNodeBlock } from "@typebot.io/chat-node-block";
+import { cometchatBlock } from "@typebot.io/cometchat-block";
 import { difyAiBlock } from "@typebot.io/dify-ai-block";
 import { elevenlabsBlock } from "@typebot.io/elevenlabs-block";
 import { groqBlock } from "@typebot.io/groq-block";
@@ -29,6 +30,7 @@ export const forgedBlocks = {
   [segmentBlock.id]: segmentBlock,
   [groqBlock.id]: groqBlock,
   [zendeskBlock.id]: zendeskBlock,
+  [cometchatBlock.id]: cometchatBlock,
 };
 export type ForgedBlockDefinition =
   (typeof forgedBlocks)[keyof typeof forgedBlocks];

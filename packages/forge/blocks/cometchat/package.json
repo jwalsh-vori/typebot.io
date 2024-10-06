@@ -1,0 +1,11 @@
+{
+  "name": "@typebot.io/cometchat-block",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./schemas": "./src/schemas.ts"
+  },
+  "dependencies": { "@typebot.io/forge": "workspace:*" },
+  "devDependencies": { "@typebot.io/tsconfig": "workspace:*" }
+}
